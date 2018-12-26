@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './App.css'
 //import UserForm from './cpnts/UserForm/UserForm'
 import NavBar from './cpnts/NavBar/'
+import FolderList from './cpnts/UiTest/FolderList'
 
 class App extends Component {
   state = {
@@ -35,6 +36,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <FolderList />
         <h1>차근차근 해보자</h1>
         <NavBar arrays={this.state.arrays} />
         {/* 안녕 {this.state.이름}! 너의 나이는 {this.state.나이} 이구나!
